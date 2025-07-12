@@ -1,0 +1,16 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "target": "es6",
+    "moduleResolution": "node",
+    "outDir": "build",
+    "allowSyntheticDefaultImports": true,
+    "lib": ["dom", "dom.iterable", "es6"]
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
