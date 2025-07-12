@@ -3,12 +3,17 @@ import React from 'react';
 type DropdownProps = {
   value: string;
   onChange: (value: string) => void;
+  className?: string;
 };
 
-const Dropdown: React.FC<DropdownProps> = ({value, onChange}) => {
+const Dropdown: React.FC<DropdownProps> = ({value, onChange, className}) => {
   return (
     <div>
-      <select value={value} onChange={e => onChange(e.target.value)}>
+      <select
+        className={className}
+        value={value}
+        onChange={e => onChange(e.target.value)}
+      >
         <option value="" disabled>
           Select a function
         </option>

@@ -10,7 +10,5 @@
     "allowSyntheticDefaultImports": true,
     "lib": ["dom", "dom.iterable", "es6"]
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*", "src/*.d.ts", "backend/*.ts"]
 }
