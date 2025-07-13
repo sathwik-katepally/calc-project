@@ -56,6 +56,9 @@ const App: React.FC = () => {
         </div>
         <button onClick={handleCalculate}>Calculate</button>
         {result !== null && <p>Result: {result}</p>}
+        <a href="http://localhost:3001/auth/google">
+          <button>Login with Google</button>
+        </a>
       </div>
     </div>
   );
